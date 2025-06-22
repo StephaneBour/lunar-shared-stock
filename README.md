@@ -48,13 +48,21 @@ php artisan vendor:publish --tag="lunar-shared-stock-config"
 php artisan migrate
 ```
 
-### 4. Publish Translations (Optional)
+### 4. Register the plugin in your AppServiceProvider
+
+```php
+LunarPanel::panel(function (Panel $panel) {
+   return $panel->plugin(LunarSharedStockPlugin::make());
+})->register();
+```
+
+### 5. Publish Translations (Optional)
 
 ```bash
 php artisan vendor:publish --tag="lunar-shared-stock-translations"
 ```
 
-### 5. Publish Views (Optional)
+### 6. Publish Views (Optional)
 
 ```bash
 php artisan vendor:publish --tag="lunar-shared-stock-views"
