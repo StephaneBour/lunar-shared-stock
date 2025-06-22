@@ -57,13 +57,10 @@
                         <div class="flex-shrink-0">
                             <x-heroicon-o-x-circle class="h-6 w-6 text-gray-400" />
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 ml-2">
                             <h3 class="text-sm font-medium text-gray-800 dark:text-gray-200">
                                 {{ __('lunar-shared-stock::shared-stock.shared_stock_disabled') }}
                             </h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-400">
-                                {{ __('lunar-shared-stock::shared-stock.manual_sync_desc') }}
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -75,13 +72,10 @@
                             <div class="flex-shrink-0">
                                 <x-heroicon-o-information-circle class="h-5 w-5 text-blue-500" />
                             </div>
-                            <div class="flex-1">
+                            <div class="flex-1 ml-2">
                                 <h4 class="text-sm font-medium text-blue-800 dark:text-blue-200">
                                     {{ $this->record->variants->count() }} {{ __('lunar-shared-stock::shared-stock.variants') }}
                                 </h4>
-                                <p class="text-sm text-blue-700 dark:text-blue-300">
-                                    {{ __('lunar-shared-stock::shared-stock.redistribution_tip') }}
-                                </p>
                             </div>
                         </div>
                     </div>
